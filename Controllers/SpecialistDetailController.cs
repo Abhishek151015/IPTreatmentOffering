@@ -43,7 +43,10 @@ namespace IPTreatmentOffering.Controllers
                     ContactNumber="6549871235"
                 }
         };
-      
+        /// <summary>
+        /// Returning list of details of Specialist.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public List<SpecialistDetail> Get()
         {

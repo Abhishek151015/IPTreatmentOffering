@@ -53,14 +53,21 @@ namespace IPTreatmentOffering.Controllers
                     TreatmentDuration=6
                 }
              };
-     
+        /// <summary>
+        /// Returning list of Treatment Packages
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public List<IPTreatmentPackages> Get()
         {
             _log4net.Info("IPTreatmentPackage Get Method");
             return itp;
         }
-
+        /// <summary>
+        /// Returning list of Treatment Packages by name.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         [HttpGet("{name}")]
         public IPTreatmentPackages Get(string name)
         {
